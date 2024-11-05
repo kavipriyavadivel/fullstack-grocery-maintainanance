@@ -1,0 +1,66 @@
+.sitem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sitem-form{
+    margin-left: 300px;
+    width: 700px;
+    height: 440px;
+    border-radius: 20px;
+    background: rgba(8, 160, 23, 0.82);
+    background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  }
+  #search{
+    width: 500px;
+    height: 40px;
+    background-color: rgba(173, 173, 173, 1);
+    border-radius: 15px;
+    border: 2x solid black;
+  }
+  .frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+@media (min-width: 768px) {
+  .frm {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) {
+  .frm {
+    font-size: 20px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .frm {
+    font-size: 25px;
+  }
+}
+  .frm-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .label-container label {
+    margin-right: 65px; 
+  }
+  .labell-container label {
+    margin-right: 15px; 
+  }
+  .res-container label{
+    margin-right: 35px;
+  }
+  .space
+    {
+        padding-left : 10px;
+        padding-right: 10px;
+        font-size: 20px;
+    }

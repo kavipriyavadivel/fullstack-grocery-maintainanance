@@ -1,0 +1,637 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body > #root, /* Adjust depending on your structure */
+#root > .app-container, /* Adjust based on your actual parent components */
+.nav-container {
+  height: 100%;
+}
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("https://sankarassociates.in/wp-content/uploads/2020/07/First-Picture_1-5.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 45px;
+  color: #fff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button-item {
+  margin: 10px;
+}
+
+.button-space {
+  width: 20px;
+}
+
+.button-link {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.login-button {
+  background: linear-gradient(to right, rgba(8, 160, 23, 0.82), rgba(3, 58, 8, 0.82));
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 35px;
+  }
+
+  .login-button {
+    font-size: 12px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .login-button {
+    font-size: 10px;
+    width: 160px;
+  }
+}
+span{
+  color: rgba(58, 188, 71);
+  font-size: 60px;
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .login-button {
+    font-size: 8px; /* Smaller text for mobile */
+    width: 100px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-space {
+    display: none;
+  }
+}
+
+/* Base styles for the login-manager */
+.login-manager {
+  background: rgba(8, 160, 23, 0.82);
+  background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  border-radius: 50%; 
+  border: 5px solid rgba(255, 255, 255, 0.82);
+  padding: 20px;
+  width: 100%;
+  max-width: 250px; /* Further reduce size for mobile devices */
+  height: 250px; /* Maintain circular shape */
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Button container styles */
+.button-container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .login-manager {
+    max-width: 350px; /* Reduce size for tablets */
+    height: 350px; /* Maintain circular shape */
+    padding: 15px;
+    border: 10px solid rgba(255, 255, 255, 0.82);
+  }
+}
+@media (min-width: 768px) {
+  .login-manager {
+    max-width: 500px; /* Reduce size for tablets */
+    height: 500px; /* Maintain circular shape */
+    padding: 15px;
+    border: 8px solid rgba(255, 255, 255, 0.82);
+  }
+}
+@media (min-width: 1200px) {
+  .login-manager {
+    max-width: 500px; /* Reduce size for tablets */
+    height: 450px; /* Maintain circular shape */
+    padding: 15px;
+    border: 10px solid rgba(255, 255, 255, 0.82);
+  }
+}
+/* Adjust button styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.82);
+  background: linear-gradient(to left, rgba(245, 240, 240, 0.82) 0%, rgba(233, 229, 229, 0.82) 8%, rgba(233, 229, 229, 0.82) 10%, rgba(222, 218, 218, 0.82) 20%, rgba(211, 207, 207, 0.82) 33%, rgba(206, 202, 202, 0.82) 40%, rgba(152, 150, 150, 0.82) 90%, rgba(143, 140, 140, 0.82) 100%);
+}
+
+/* Example style for the Managerbutton component */
+button.manage-but {
+  height: 30px;
+  width: 150px;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  button.manage-but {
+    height: 35px;
+    width: 150px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  button.manage-but {
+    height: 50px;
+    width: 250px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  button.manage-but {
+    height: 60px;
+    width: 300px;
+    font-size: 16px;
+  }
+}
+
+.container-row {
+  height: 290px;
+  width: 300px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .container-row {
+    height: 500px;
+    width: 500px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-row {
+    height: 550px;
+    width: 550px; 
+  }
+}
+/* Base styles for the login-admin */
+.login-admin {
+  background: rgba(8, 160, 23, 0.82);
+  background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  border-radius: 50%; 
+  border: 5px solid rgba(255, 255, 255, 0.82);
+  padding: 20px;  
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Style the form and inputs within the login-admin */
+.form {
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  height: 20px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .form-control {
+    height: 30px;
+    width: 100%; 
+  }
+  .form {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+  .login-admin{
+    border: 10px solid rgba(255, 255, 255, 0.82);
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-control {
+    height: 30px;
+    width: 100%; 
+  }
+  .form {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+  .login-admin{
+    border: 10px solid rgba(255, 255, 255, 0.82);
+  }
+}
+.manage-but {
+  height: 30px;
+  width: 150px;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.82);
+  background: linear-gradient(to left, rgba(245, 240, 240, 0.82) 0%, rgba(233, 229, 229, 0.82) 8%, rgba(233, 229, 229, 0.82) 10%, rgba(222, 218, 218, 0.82) 20%, rgba(211, 207, 207, 0.82) 33%, rgba(206, 202, 202, 0.82) 40%, rgba(152, 150, 150, 0.82) 90%, rgba(143, 140, 140, 0.82) 100%);
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+/* Base styles for the nav */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+@media (max-width: 992px) {
+  .nav-container {
+    height: 100vh; /* Maintain full height on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-container {
+    height: 100vh; /* Maintain full height on mobile devices */
+  }
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.color-nav {
+  background: rgba(8, 160, 23, 0.82);
+  background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 250px;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between elements */
+  flex-grow: 1; /* Allow nav-content to grow and fill the remaining space */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Make the list grow to fill the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribute items evenly */
+}
+
+.nav-item {
+  margin: 15px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.nav-link:hover, .nav-item.active .nav-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.nav-text {
+  font-size: 20px; /* Default font size */
+  color: whitesmoke;
+  margin-left: 10px;
+}
+
+/* Tablet and smaller laptops */
+@media (max-width: 992px) {
+  .color-nav {
+    width: 200px; /* Adjust width */
+    height: 100vh;
+  }
+
+  .nav-text {
+    font-size: 12px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  .color-nav {
+    width: 100%; /* Full width for mobile */
+    padding: 10px;
+    height: 100vh;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-text {
+    display: none; /* Hide text on very small screens */
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+/* .nav {
+  background: rgba(8, 160, 23, 0.82);
+  background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.anav {
+  background: rgba(8, 160, 23, 0.82);
+  background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.anav a {
+  color: white;
+  text-decoration: none;
+}
+.active-link h4 {
+  color: black;
+} */
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.list-container {
+  background: rgba(8, 160, 23, 0.82);
+  background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  height: 25rem;
+  width: 40rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Start items from the top */
+  align-items: center; /* Centers items horizontally */
+  padding-top: 2rem; 
+  overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+.list-container ul {
+  list-style-position: inside; /* Ensures the bullet is inside the list item */
+  margin: 0;
+  padding-left: 0; /* Removes default padding */
+  max-height: 15rem; /* Set a max height for the list */
+  overflow-y: auto; /* Enable scrolling inside the list when it exceeds height */
+}
+
+.list-container li {
+  display: flex;
+  align-items: center; /* Aligns bullet and text in a single line */
+  font-size: 25px; /* Adjust as per your needs */
+  justify-content: center;
+  color: white; /* Centers text horizontally */
+}
+.update{
+  padding-right: 20rem;
+  padding-top: 8rem;
+  color: white;
+  font-size: 20px;
+}
+.table {
+  width: 90%; /* Adjust width of the table's container */
+  max-width: 1200px; /* Optional: set a maximum width for the table */
+}
+.issue-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.issue-item-container {
+  max-height: 400px; /* Set a max-height for the container */
+  width: 100%; /* Set width as per your layout */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  margin-top: 45px; /* Optional: if you want a gap above the table */
+  border: 1px solid #ccc; /* Optional: border around the scrollable container */
+  padding-left: 10rem;
+}
+
+/* Table styling remains the same */
+.returned-item table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%; /* Let the table fill the width of its container */
+}
+
+.issue-item td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+.issue-item tr:nth-child(even) {
+  background-color: #dddddd;
+  border: 1px solid black;
+}
+
+.issue-table {
+  padding-right: 20rem;
+  padding-top: 5rem;
+}
+.btn-approval {
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+  background-color: green;
+}
+.returned-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.returned-item-container {
+  max-height: 400px; /* Set a max-height for the container */
+  width: 100%; /* Set width as per your layout */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  margin-top: 45px; /* Optional: if you want a gap above the table */
+  border: 1px solid #ccc; /* Optional: border around the scrollable container */
+  padding-left: 10rem;
+}
+
+/* Table styling remains the same */
+.returned-item table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%; /* Let the table fill the width of its container */
+}
+
+.returned-item td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+.returned-item tr:nth-child(even) {
+  background-color: #dddddd;
+  border: 1px solid black;
+}
+
+.returned-table {
+  padding-right: 20rem;
+  padding-top: 5rem;
+}
+
+#search{
+  width: 500px;
+  height: 40px;
+  background-color: rgba(173, 173, 173, 1);
+  border-radius: 15px;
+  border: 2x solid black;
+}
+.button-wrapper {
+  display: inline-block;
+  justify-content: flex-end;
+  
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}.but-wrapper {
+  display: inline-block;
+  justify-content: flex-end;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#password-la,#username-la{
+  position: relative;
+}

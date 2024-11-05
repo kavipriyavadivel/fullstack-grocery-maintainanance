@@ -1,0 +1,15 @@
+/* nav.css */
+
+/* Style for the nav links */
+.nav-link {
+    color: #000; /* Default link color */
+    text-decoration: none;
+}
+
+/* Style for the active nav link */
+.nav-item.active .nav-link {
+    color: #fff; /* Active link color */
+    background-color: #007bff; /* Background color of the active link */
+    border-radius: 5px; /* Optional: Make it look nice */
+    padding: 5px 10px; /* Optional: Adjust padding */
+}

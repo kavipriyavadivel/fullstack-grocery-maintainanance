@@ -1,0 +1,42 @@
+.container {
+  display: flex; /* Use flexbox layout */
+  padding: 20px; /* Add some padding */
+}
+
+.item-form {
+  margin-left: 20px; /* Space between Nav and form */
+  flex-grow: 1; /* Allow the form to take the remaining space */
+}
+
+.frm-div {
+  display: flex;
+  flex-direction: column; /* Stack the form elements vertically */
+}
+
+.label-container,
+.drop,
+.date {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+input,
+select {
+  width: 190px; /* Set consistent width */
+  height: 30px; /* Set consistent height */
+  border-radius: 15px; /* Rounded corners */
+  border: none; /* Remove border */
+  padding: 5px; /* Add padding */
+}
+
+.manage-but {
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for button */
+  padding: 10px; /* Add padding for button */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.manage-but:hover {
+  background-color: #0056b3; /* Darker button on hover */
+}

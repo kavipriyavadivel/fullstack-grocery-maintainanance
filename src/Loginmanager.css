@@ -1,0 +1,5 @@
+.rounded-container {
+    border-radius: 50%;
+    overflow: hidden; /* Ensures content within container doesn't overflow */
+  }
+  

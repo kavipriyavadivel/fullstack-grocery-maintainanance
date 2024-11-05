@@ -1,0 +1,40 @@
+.uiitem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .uiitem-form{
+    margin-left: 300px;
+    width: 700px;
+    height: 440px;
+    border-radius: 20px;
+    background: rgba(8, 160, 23, 0.82);
+    background: linear-gradient(to right, rgba(8, 160, 23, 0.82) 0%, rgba(8, 155, 22, 0.82) 6%, rgba(5, 100, 14, 0.82) 56%, rgba(3, 62, 9, 0.82) 95%, rgba(3, 58, 8, 0.82) 100%);
+  }
+  .drop{
+    display: flex;
+    flex-direction: row;
+  }
+  select{
+    background-color: white;
+    border-radius: 20px;
+    width: 205px;
+    height: 30px;
+  }
+  .drop label {
+    margin-right: 30px; 
+  }
+  .date label {
+    margin-right: 60px; 
+  }
+  .date input{
+    border-radius: 20px;
+    border: none;
+  }
+  .space
+    {
+        padding-left : 10px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+  
